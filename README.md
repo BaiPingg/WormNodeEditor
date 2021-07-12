@@ -1,6 +1,6 @@
 # WormNodeEditor
-###使用步骤
-####1.创建graph
+### 使用步骤
+#### 1.创建graph
 ```
 using wormNode;
 
@@ -11,7 +11,7 @@ public class WormTestGraph : Graph
 }
 
 ```
-####2.创建node
+#### 2.创建node
 ```
 using wormNode;
 
