@@ -49,4 +49,8 @@ public class WormTestNode :Node
     }
 }
 ```
-*[Input]*
+[Input]特性：描述输入节点
+[Ouput]特性：描述输出节点
+[ShowInEditor]特性：其它字段，但是可再Editor里编辑
+#### 3.创建Asset文件并打开Editor编辑
+
