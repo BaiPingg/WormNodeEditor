@@ -1,0 +1,369 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8878511915469742888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26153114235440f4a192394602c6de9, type: 3}
+  m_Name: ' (WormTestNode)'
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 941, y: 153}
+  ports:
+    keys:
+    - a
+    - b
+    - result
+    - sum
+    values:
+    - fieldName: a
+      direction: 0
+      node: {fileID: -8878511915469742888}
+      _typeQualifiedName: 
+      connections:
+      - fieldName: result
+        node: {fileID: 3256421740237506895}
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: b
+      direction: 0
+      node: {fileID: -8878511915469742888}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: result
+      direction: 1
+      node: {fileID: -8878511915469742888}
+      _typeQualifiedName: 
+      connections:
+      - fieldName: a
+        node: {fileID: 4140105556770931081}
+      connectionType: 0
+      typeConstraint: 0
+    - fieldName: sum
+      direction: 1
+      node: {fileID: -8878511915469742888}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 0
+      typeConstraint: 0
+  a: 0
+  b: 0
+  result: 0
+  sum: 0
+  mathType: 0
+--- !u!114 &-7448083713790683577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26153114235440f4a192394602c6de9, type: 3}
+  m_Name: ' (WormTestNode)'
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 201, y: 169}
+  ports:
+    keys:
+    - a
+    - b
+    - result
+    - sum
+    values:
+    - fieldName: a
+      direction: 0
+      node: {fileID: -7448083713790683577}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: b
+      direction: 0
+      node: {fileID: -7448083713790683577}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: result
+      direction: 1
+      node: {fileID: -7448083713790683577}
+      _typeQualifiedName: 
+      connections:
+      - fieldName: a
+        node: {fileID: 3256421740237506895}
+      connectionType: 0
+      typeConstraint: 0
+    - fieldName: sum
+      direction: 1
+      node: {fileID: -7448083713790683577}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 0
+      typeConstraint: 0
+  a: 12
+  b: 6546
+  result: 0
+  sum: 0
+  mathType: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb98c66a0df94a128f5552a4b0e98a2, type: 3}
+  m_Name: New Worm Test Graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7448083713790683577}
+  - {fileID: 3256421740237506895}
+  - {fileID: -8878511915469742888}
+  - {fileID: 4140105556770931081}
+  - {fileID: 8508805374036329838}
+  - {fileID: 5117840999012270860}
+--- !u!114 &3256421740237506895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26153114235440f4a192394602c6de9, type: 3}
+  m_Name: ' (WormTestNode)'
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 565, y: 208}
+  ports:
+    keys:
+    - a
+    - b
+    - result
+    - sum
+    values:
+    - fieldName: a
+      direction: 0
+      node: {fileID: 3256421740237506895}
+      _typeQualifiedName: 
+      connections:
+      - fieldName: result
+        node: {fileID: -7448083713790683577}
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: b
+      direction: 0
+      node: {fileID: 3256421740237506895}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: result
+      direction: 1
+      node: {fileID: 3256421740237506895}
+      _typeQualifiedName: 
+      connections:
+      - fieldName: a
+        node: {fileID: -8878511915469742888}
+      - fieldName: a
+        node: {fileID: 8508805374036329838}
+      connectionType: 0
+      typeConstraint: 0
+    - fieldName: sum
+      direction: 1
+      node: {fileID: 3256421740237506895}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 0
+      typeConstraint: 0
+  a: 0
+  b: 0
+  result: 0
+  sum: 0
+  mathType: 0
+--- !u!114 &4140105556770931081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26153114235440f4a192394602c6de9, type: 3}
+  m_Name: ' (WormTestNode)'
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1309, y: 195}
+  ports:
+    keys:
+    - a
+    - b
+    - result
+    - sum
+    values:
+    - fieldName: a
+      direction: 0
+      node: {fileID: 4140105556770931081}
+      _typeQualifiedName: 
+      connections:
+      - fieldName: result
+        node: {fileID: -8878511915469742888}
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: b
+      direction: 0
+      node: {fileID: 4140105556770931081}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: result
+      direction: 1
+      node: {fileID: 4140105556770931081}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 0
+      typeConstraint: 0
+    - fieldName: sum
+      direction: 1
+      node: {fileID: 4140105556770931081}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 0
+      typeConstraint: 0
+  a: 0
+  b: 0
+  result: 0
+  sum: 0
+  mathType: 0
+--- !u!114 &5117840999012270860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26153114235440f4a192394602c6de9, type: 3}
+  m_Name: ' (WormTestNode)'
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1261, y: 530}
+  ports:
+    keys:
+    - a
+    - b
+    - result
+    - sum
+    values:
+    - fieldName: a
+      direction: 0
+      node: {fileID: 5117840999012270860}
+      _typeQualifiedName: 
+      connections:
+      - fieldName: result
+        node: {fileID: 8508805374036329838}
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: b
+      direction: 0
+      node: {fileID: 5117840999012270860}
+      _typeQualifiedName: 
+      connections:
+      - fieldName: sum
+        node: {fileID: 8508805374036329838}
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: result
+      direction: 1
+      node: {fileID: 5117840999012270860}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 0
+      typeConstraint: 0
+    - fieldName: sum
+      direction: 1
+      node: {fileID: 5117840999012270860}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 0
+      typeConstraint: 0
+  a: -4.4
+  b: 0
+  result: 0
+  sum: 0
+  mathType: 0
+--- !u!114 &8508805374036329838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26153114235440f4a192394602c6de9, type: 3}
+  m_Name: ' (WormTestNode)'
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 862, y: 443}
+  ports:
+    keys:
+    - a
+    - b
+    - result
+    - sum
+    values:
+    - fieldName: a
+      direction: 0
+      node: {fileID: 8508805374036329838}
+      _typeQualifiedName: 
+      connections:
+      - fieldName: result
+        node: {fileID: 3256421740237506895}
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: b
+      direction: 0
+      node: {fileID: 8508805374036329838}
+      _typeQualifiedName: 
+      connections: []
+      connectionType: 1
+      typeConstraint: 0
+    - fieldName: result
+      direction: 1
+      node: {fileID: 8508805374036329838}
+      _typeQualifiedName: 
+      connections:
+      - fieldName: a
+        node: {fileID: 5117840999012270860}
+      connectionType: 0
+      typeConstraint: 0
+    - fieldName: sum
+      direction: 1
+      node: {fileID: 8508805374036329838}
+      _typeQualifiedName: 
+      connections:
+      - fieldName: b
+        node: {fileID: 5117840999012270860}
+      connectionType: 0
+      typeConstraint: 0
+  a: 0
+  b: 1231231
+  result: 0
+  sum: 0
+  mathType: 0
