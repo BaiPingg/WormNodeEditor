@@ -53,4 +53,4 @@ public class WormTestNode :Node
 [Ouput]特性：描述输出节点
 [ShowInEditor]特性：其它字段，但是可再Editor里编辑
 #### 3.创建Asset文件并打开Editor编辑
-![image](https://github.com/BaiPingg/WormNodeEditor/map/blob/master/public/image/20190528145810708.png)
+![image](https://github.com/BaiPingg/WormNodeEditor/imgs/example.jpg)
